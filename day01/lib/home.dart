@@ -11,9 +11,14 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
+    final Size size = MediaQuery.of(context).size;
+    final double top = size.height / 2;
+    final double right = size.width * 0.1;
+
     return Scaffold(
       body: Stack(
         children: [
+          // level 1
           Row(
             children: [
               Expanded(
@@ -63,9 +68,10 @@ class _HomePageState extends State<HomePage> {
               const Area(flex: 1, color: Colors.pink),
             ],
           ),
+          // level 2
           Positioned(
-            top: 100,
-            left: 40,
+            top: top,
+            left: right,
             child: Container(
               height: 100,
               width: 100,
