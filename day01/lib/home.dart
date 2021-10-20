@@ -12,8 +12,12 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     final Size size = MediaQuery.of(context).size;
-    final double top = size.height / 2;
-    final double right = size.width * 0.1;
+    final double top = size.height * 0.5;
+    final double left = size.width * 0.15;
+
+    // final EdgeInsets padding = MediaQuery.of(context).padding;
+    // final double top = (size.height - padding.top - padding.bottom) * 0.5;
+    // final double left = (size.width - padding.left - padding.right) * 0.15;
 
     return Scaffold(
       body: Stack(
@@ -71,10 +75,10 @@ class _HomePageState extends State<HomePage> {
           // level 2
           Positioned(
             top: top,
-            left: right,
+            left: left,
             child: Container(
-              height: 100,
-              width: 100,
+              height: size.width * 0.2,
+              width: size.width * 0.2,
               color: Colors.blueGrey.withOpacity(0.5),
             ),
           ),
