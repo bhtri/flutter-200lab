@@ -1,4 +1,4 @@
-import 'package:day01/home.dart';
+import 'package:day01/problem_2b.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -6,6 +6,6 @@ void main() {
     debugShowCheckedModeBanner: false,
     title: 'Day 01',
     theme: ThemeData(primarySwatch: Colors.blue),
-    home: const HomePage(),
+    home: const Problem2B(),
   ));
 }
