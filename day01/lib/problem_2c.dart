@@ -30,16 +30,38 @@ class _Problem2CState extends State<Problem2C> {
     return lstWidget;
   }
 
-  Widget buildContent() {
-    Container container = Container();
-    
-    return container;
+  // Unsupported operation: Cannot add to an unmodifiable list
+  Widget buildContent(int row, int column) {
+    Column col = Column();
+    for (var i = 0; i < row; i++) {
+      col.children.add(Row(
+        children: buildRow(column: column),
+      ));
+      col.children.add(const SizedBox(height: 5));
+    }
+    return col;
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(child: Container()),
+      // body: SafeArea(child: buildContent(8, 4)), // error ??
+      body: SafeArea(
+        child: Column(
+          children: buildContent2(8, 4),
+        ),
+      ),
     );
+  }
+
+  List<Widget> buildContent2(int row, int column) {
+    List<Widget> lst = [];
+    for (var i = 0; i < row; i++) {
+      lst.add(Row(
+        children: buildRow(column: column),
+      ));
+      // lst.add(const SizedBox(height: 5));
+    }
+    return lst;
   }
 }
