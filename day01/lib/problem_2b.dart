@@ -11,11 +11,22 @@ class Problem2B extends StatefulWidget {
 class _Problem2BState extends State<Problem2B> {
   List<Widget> buildContent({int row = 1}) {
     List<Widget> lstWidget = [];
-    for (var i = 0; i < row - 1; i++) {
+    if (row > 0) {
+      for (var i = 0; i < row - 1; i++) {
+        lstWidget.add(const Area(color: Colors.pink));
+        lstWidget.add(const SizedBox(height: 5));
+      }
       lstWidget.add(const Area(color: Colors.pink));
-      lstWidget.add(const SizedBox(height: 5));
+    } else {
+      lstWidget.add(
+        const Center(
+          child: Text(
+            'Can not build',
+            textAlign: TextAlign.center,
+          ),
+        ),
+      );
     }
-    lstWidget.add(const Area(color: Colors.pink));
     return lstWidget;
   }
 
@@ -24,7 +35,8 @@ class _Problem2BState extends State<Problem2B> {
     return Scaffold(
       body: SafeArea(
         child: Column(
-          children: buildContent(row: 5),
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: buildContent(row: 4),
         ),
       ),
     );
