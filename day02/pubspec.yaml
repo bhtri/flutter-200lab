@@ -11,6 +11,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  google_fonts: ^2.1.0
 
 
 dev_dependencies:
@@ -20,3 +21,9 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/icons/1x
+    - assets/icons/2x
+    - assets/icons/3x
