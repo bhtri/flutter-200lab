@@ -273,8 +273,8 @@ class AppAssets {
 
   static const String kIcons1x30DeletePng = 'assets/icons/1x/30 Delete.png';
 
-  static const String kIcons1x30Update,
-      Reset2Png = 'assets/icons/1x/30 Update, reset_2.png';
+  static const String kIcons1x30UpdateReset2Png =
+      'assets/icons/1x/30 Update, reset_2.png';
 
   static const String kIcons1x31FirePng = 'assets/icons/1x/31 Fire.png';
 
@@ -285,13 +285,13 @@ class AppAssets {
 
   static const String kIcons1x33EnablePng = 'assets/icons/1x/33 Enable.png';
 
-  static const String kIcons1x33Update,
-      Reset3Png = 'assets/icons/1x/33 Update, reset_3.png';
+  static const String kIcons1x33UpdateReset3Png =
+      'assets/icons/1x/33 Update, reset_3.png';
 
   static const String kIcons1x34BindPng = 'assets/icons/1x/34 Bind.png';
 
-  static const String kIcons1x34Update,
-      Reset4Png = 'assets/icons/1x/34 Update, reset_4.png';
+  static const String kIcons1x34UpdateReset4Png =
+      'assets/icons/1x/34 Update, reset_4.png';
 
   static const String kIcons1x35LampPng = 'assets/icons/1x/35 Lamp.png';
 
@@ -452,6 +452,12 @@ class AppAssets {
 
   static const String kIcons1xClosePng = 'assets/icons/1x/Close.png';
 
+  static const String kIcons1xDefaultActivePng =
+      'assets/icons/1x/Default/Active.png';
+
+  static const String kIcons1xDefaultInactivePng =
+      'assets/icons/1x/Default/Inactive.png';
+
   static const String kIcons1xEntryPng = 'assets/icons/1x/Entry.png';
 
   static const String kIcons1xForwardPng = 'assets/icons/1x/Forward.png';
@@ -493,6 +499,20 @@ class AppAssets {
   static const String kIcons1xCartPng = 'assets/icons/1x/cart.png';
 
   static const String kIcons1xFacebookPng = 'assets/icons/1x/facebook.png';
+
+  static const String kIcons1xTabbarHomePng = 'assets/icons/1x/tabbar/Home.png';
+
+  static const String kIcons1xTabbarNotificationsCopy3Png =
+      'assets/icons/1x/tabbar/Notifications Copy 3.png';
+
+  static const String kIcons1xTabbarNotificationsPng =
+      'assets/icons/1x/tabbar/Notifications.png';
+
+  static const String kIcons1xTabbarStreamPng =
+      'assets/icons/1x/tabbar/Stream.png';
+
+  static const String kIcons1xTabbarMessagePng =
+      'assets/icons/1x/tabbar/message.png';
 
   static const String kIcons1xTwitterPng = 'assets/icons/1x/twitter.png';
 
@@ -770,8 +790,8 @@ class AppAssets {
 
   static const String kIcons2x30DeletePng = 'assets/icons/2x/30 Delete.png';
 
-  static const String kIcons2x30Update,
-      Reset2Png = 'assets/icons/2x/30 Update, reset_2.png';
+  static const String kIcons2x30UpdateReset2Png =
+      'assets/icons/2x/30 Update, reset_2.png';
 
   static const String kIcons2x31FirePng = 'assets/icons/2x/31 Fire.png';
 
@@ -782,13 +802,13 @@ class AppAssets {
 
   static const String kIcons2x33EnablePng = 'assets/icons/2x/33 Enable.png';
 
-  static const String kIcons2x33Update,
-      Reset3Png = 'assets/icons/2x/33 Update, reset_3.png';
+  static const String kIcons2x33UpdateReset3Png =
+      'assets/icons/2x/33 Update, reset_3.png';
 
   static const String kIcons2x34BindPng = 'assets/icons/2x/34 Bind.png';
 
-  static const String kIcons2x34Update,
-      Reset4Png = 'assets/icons/2x/34 Update, reset_4.png';
+  static const String kIcons2x34UpdateReset4Png =
+      'assets/icons/2x/34 Update, reset_4.png';
 
   static const String kIcons2x35LampPng = 'assets/icons/2x/35 Lamp.png';
 
@@ -949,6 +969,12 @@ class AppAssets {
 
   static const String kIcons2xClosePng = 'assets/icons/2x/Close.png';
 
+  static const String kIcons2xDefaultActivePng =
+      'assets/icons/2x/Default/Active.png';
+
+  static const String kIcons2xDefaultInactivePng =
+      'assets/icons/2x/Default/Inactive.png';
+
   static const String kIcons2xEntryPng = 'assets/icons/2x/Entry.png';
 
   static const String kIcons2xForwardPng = 'assets/icons/2x/Forward.png';
@@ -990,6 +1016,20 @@ class AppAssets {
   static const String kIcons2xCartPng = 'assets/icons/2x/cart.png';
 
   static const String kIcons2xFacebookPng = 'assets/icons/2x/facebook.png';
+
+  static const String kIcons2xTabbarHomePng = 'assets/icons/2x/tabbar/Home.png';
+
+  static const String kIcons2xTabbarNotificationsCopy3Png =
+      'assets/icons/2x/tabbar/Notifications Copy 3.png';
+
+  static const String kIcons2xTabbarNotificationsPng =
+      'assets/icons/2x/tabbar/Notifications.png';
+
+  static const String kIcons2xTabbarStreamPng =
+      'assets/icons/2x/tabbar/Stream.png';
+
+  static const String kIcons2xTabbarMessagePng =
+      'assets/icons/2x/tabbar/message.png';
 
   static const String kIcons2xTwitterPng = 'assets/icons/2x/twitter.png';
 
@@ -1267,8 +1307,8 @@ class AppAssets {
 
   static const String kIcons3x30DeletePng = 'assets/icons/3x/30 Delete.png';
 
-  static const String kIcons3x30Update,
-      Reset2Png = 'assets/icons/3x/30 Update, reset_2.png';
+  static const String kIcons3x30UpdateReset2Png =
+      'assets/icons/3x/30 Update, reset_2.png';
 
   static const String kIcons3x31FirePng = 'assets/icons/3x/31 Fire.png';
 
@@ -1279,13 +1319,13 @@ class AppAssets {
 
   static const String kIcons3x33EnablePng = 'assets/icons/3x/33 Enable.png';
 
-  static const String kIcons3x33Update,
-      Reset3Png = 'assets/icons/3x/33 Update, reset_3.png';
+  static const String kIcons3x33UpdateReset3Png =
+      'assets/icons/3x/33 Update, reset_3.png';
 
   static const String kIcons3x34BindPng = 'assets/icons/3x/34 Bind.png';
 
-  static const String kIcons3x34Update,
-      Reset4Png = 'assets/icons/3x/34 Update, reset_4.png';
+  static const String kIcons3x34UpdateReset4Png =
+      'assets/icons/3x/34 Update, reset_4.png';
 
   static const String kIcons3x35LampPng = 'assets/icons/3x/35 Lamp.png';
 
@@ -1446,6 +1486,12 @@ class AppAssets {
 
   static const String kIcons3xClosePng = 'assets/icons/3x/Close.png';
 
+  static const String kIcons3xDefaultActivePng =
+      'assets/icons/3x/Default/Active.png';
+
+  static const String kIcons3xDefaultInactivePng =
+      'assets/icons/3x/Default/Inactive.png';
+
   static const String kIcons3xEntryPng = 'assets/icons/3x/Entry.png';
 
   static const String kIcons3xForwardPng = 'assets/icons/3x/Forward.png';
@@ -1487,6 +1533,20 @@ class AppAssets {
   static const String kIcons3xCartPng = 'assets/icons/3x/cart.png';
 
   static const String kIcons3xFacebookPng = 'assets/icons/3x/facebook.png';
+
+  static const String kIcons3xTabbarHomePng = 'assets/icons/3x/tabbar/Home.png';
+
+  static const String kIcons3xTabbarNotificationsCopy3Png =
+      'assets/icons/3x/tabbar/Notifications Copy 3.png';
+
+  static const String kIcons3xTabbarNotificationsPng =
+      'assets/icons/3x/tabbar/Notifications.png';
+
+  static const String kIcons3xTabbarStreamPng =
+      'assets/icons/3x/tabbar/Stream.png';
+
+  static const String kIcons3xTabbarMessagePng =
+      'assets/icons/3x/tabbar/message.png';
 
   static const String kIcons3xTwitterPng = 'assets/icons/3x/twitter.png';
 
