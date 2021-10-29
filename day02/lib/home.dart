@@ -1,5 +1,8 @@
+import 'package:day02/components/primary_avatar.dart';
 import 'package:day02/components/primary_button.dart';
+import 'package:day02/components/primary_chat_card.dart';
 import 'package:day02/components/primary_textbox.dart';
+import 'package:day02/constant/app_assets.dart';
 import 'package:day02/constant/app_colors.dart';
 import 'package:flutter/material.dart';
 
@@ -11,6 +14,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  int _selectedIndex = 1;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,20 +52,85 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.zero,
               ),
             ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: const [
+                PrimaryAvaTar(
+                  imgPath: AppAssets.kImagesUser4Png,
+                  isActive: true,
+                  numberMess: 3,
+                ),
+                PrimaryAvaTar(
+                  imgPath: AppAssets.kImagesUser5Png,
+                  isActive: false,
+                  numberMess: -1,
+                ),
+              ],
+            ),
+            const PrimaryChatCard(
+              avatar: PrimaryAvaTar(
+                imgPath: AppAssets.kImagesUser4Png,
+                isActive: true,
+                numberMess: 3,
+              ),
+              name: 'Herman Pope',
+              lastMessage: 'What kind of musicdo you like?',
+              time: '04:04 AM',
+            ),
+            const PrimaryChatCard(
+              avatar: PrimaryAvaTar(
+                imgPath: AppAssets.kImagesUser1Png,
+                isActive: false,
+                numberMess: 1,
+              ),
+              name: 'Ada Reyes',
+              lastMessage: 'Sounds good to me!',
+              time: '11:33 PM',
+            ),
           ],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: AppColors.kPrimaryColor1,
+        currentIndex: _selectedIndex,
+        selectedItemColor: AppColors.kDestructive,
+        unselectedItemColor: AppColors.kGray1,
+        selectedFontSize: 12,
+        onTap: (value) => setState(() {
+          _selectedIndex = value;
+        }),
         type: BottomNavigationBarType.fixed,
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-          BottomNavigationBarItem(icon: Icon(Icons.stream), label: 'Streams'),
-          BottomNavigationBarItem(icon: Icon(Icons.message), label: 'Messages'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.notifications), label: 'Notifications'),
+            icon: ImageIcon(
+              AssetImage(AppAssets.kIcons2xTabbarHomePng),
+            ),
+            label: 'Home',
+          ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.portable_wifi_off), label: 'Profiles'),
+            icon: ImageIcon(
+              AssetImage(AppAssets.kIcons2xTabbarStreamPng),
+            ),
+            label: 'Streams',
+          ),
+          BottomNavigationBarItem(
+            icon: ImageIcon(
+              AssetImage(AppAssets.kIcons2xTabbarMessagePng),
+            ),
+            label: 'Messages',
+          ),
+          BottomNavigationBarItem(
+            icon: ImageIcon(
+              AssetImage(AppAssets.kIcons2xTabbarNotificationsPng),
+            ),
+            label: 'Notifications',
+          ),
+          BottomNavigationBarItem(
+            icon: ImageIcon(
+              AssetImage(AppAssets.kIcons2xTabbarNotificationsCopy3Png),
+            ),
+            label: 'Profiles',
+          ),
         ],
       ),
     );
