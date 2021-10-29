@@ -8,7 +8,7 @@ class PrimaryButton extends StatelessWidget {
     required this.press,
     required this.color,
     this.padding = const EdgeInsets.all(AppStyles.kDefaultPadding * 0.75),
-    required this.textStyle,
+    this.textStyle,
   }) : super(key: key);
 
   final String text;

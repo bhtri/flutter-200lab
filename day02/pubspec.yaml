@@ -24,12 +24,12 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
-    - assets/icons/1x
-    - assets/icons/1x/Default
-    - assets/icons/1x/tabbar
-    - assets/icons/2x
-    - assets/icons/2x/Default
-    - assets/icons/2x/tabbar
-    - assets/icons/3x
-    - assets/icons/3x/Default
-    - assets/icons/3x/tabbar
+    - assets/icons/1x/
+    - assets/icons/1x/Default/
+    - assets/icons/1x/tabbar/
+    - assets/icons/2x/
+    - assets/icons/2x/Default/
+    - assets/icons/2x/tabbar/
+    - assets/icons/3x/
+    - assets/icons/3x/Default/
+    - assets/icons/3x/tabbar/

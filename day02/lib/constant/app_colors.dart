@@ -31,4 +31,7 @@ class AppColors {
   static const Color kDarkerBottom80 = Color(0xFF000000);
   static const Color kDarkerBottom60 = Color(0xFF000000);
   static const Color kDarkerBottom30 = Color(0xFF000000);
+
+  static const kPrimaryColor1 = Color(0xFF242A37);
+  static const kPrimaryColor2 = Color(0xFF4E586E);
 }
